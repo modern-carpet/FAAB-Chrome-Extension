@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #4CAF50;
+    --primary-hover-color: #45a049;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --border-color: #ddd;
+    --error-color: #ff6b6b;
+    --success-color: #51cf66;
+    --card-background: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    width: 350px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  h1, h2 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-size: 16px;
+  }
+  
+  button:hover, button:focus {
+    background-color: var(--primary-hover-color);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input[type="text"]:focus, select:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  #leagueOverview, #teamAnalysis, #bidRecommendation {
+    margin-bottom: 25px;
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }
+  
+  #leagueData ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #leagueData li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  #recommendationResult {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  #loadingIndicator {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: var(--text-color);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 400px) {
+    body {
+      width: 300px;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    button, input[type="text"], select {
+      font-size: 14px;
+    }
+  }

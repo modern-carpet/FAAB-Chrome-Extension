@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Fantasy Football FAAB Manager",
+    "version": "1.0",
+    "description": "Manage your Fantasy Football FAAB bids",
+    "permissions": [
+      "identity",
+      "storage",
+      "tabs",
+      "alarms"
+    ],
+    "host_permissions": [
+      "https://*.yahooapis.com/*",
+      "https://api.login.yahoo.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA86hS7t8EV64R3P2ueEZ4VUTRbkafKyJX/w60Ee/BU8QzMYxPNVB/A3rlwmzDnVl8SoDVEnWbpNx76y9YGzQ86qbwnMbdCUZVk5GucSH4/pH95eTtYGbxTlRrLq5NJJNHoanamBMsjrVlC/R0aDwMfg2zTsZixu6kQbFZpdgtEYMVPkb+911qajX8KcZpSRPCb22x0hBQg22EnkhqFAofXI1ZBCw2JkGc2cPuvnq5AFISWj+4ktn46IGnkyXAiTq46q5jYUm/Ith1O+caWRoPRqdgubOT/0JpKVk3kzJGOhBzghseZ10QrNt6PRXe5zpgPM/CAFeapPWD7e98sVBLPQIDAQAB",
+    "oauth2": {
+      "client_id": "dj0yJmk9TkVOQTVRc2hpc21nJmQ9WVdrOVJXRkNXbWR6UVdJbWNHbzlNQT09JnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTA3",
+      "scopes": ["https://fantasysports.yahooapis.com/"]
+    }
+  }
